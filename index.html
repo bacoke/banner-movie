@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -38,6 +39,45 @@
         </nav>
       </div>
       <!-- end nav -->
+
+      <!-- disini dipasang iklan Vast -->
+      <div class="w-[90%] aspect-video h-auto mx-auto">
+          <div class="relative w-full flex justify-center items-center py-5 overflow-hidden"> 
+            <video id="video-id"><source src="https://www.videosprofitnetwork.com/watch.xml?key=6da9a53b5a7602e4d7d4b4ce7d7239de4" type="video/mp4" class="absolute z-10 w-auto min-w-full min-h-full max-w-none"/>
+            <script>
+                var myFP = fluidPlayer(
+                    'video-id',	{
+                "layoutControls": {
+                    "controlBar": {
+                        "autoHideTimeout": 3,
+                        "animated": true,
+                        "autoHide": true
+                    },
+                    "htmlOnPauseBlock": {
+                        "html": null,
+                        "height": null,
+                        "width": null
+                    },
+                    "autoPlay": false,
+                    "mute": true,
+                    "allowTheatre": true,
+                    "playPauseAnimation": false,
+                    "playbackRateEnabled": false,
+                    "allowDownload": false,
+                    "playButtonShowing": false,
+                    "fillToContainer": false,
+                    "posterImage": ""
+                },
+                "vastOptions": {
+                    "adList": [],
+                    "adCTAText": false,
+                    "adCTATextPosition": ""
+                }
+            });
+            </script>
+        </div>
+      </div>
+
 
       <!-- img banner -->
       <div class="w-full p-3 lg:px-10">
@@ -96,7 +136,7 @@
       </div>
       
       <!-- alokasi ADS -->
-      <div class="w-full h-auto border-1 px-2 py-5 flex justify-center">
+      <div class="w-full h-auto border-1 px-2 p-5 flex justify-center">
         <div id="container-8a89c4aa6dfbaed95c72251318051964" class="p-2"></div>
       </div>
 
