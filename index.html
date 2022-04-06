@@ -24,6 +24,24 @@
 </head>
 <body>
 <div class="bg-fuchsia-100 w-full pb-60">
+
+    <!-- ads atas -->
+        <div class="w-full py-5">
+            <div class="w-[90%] flex justify-center items-center mx-auto">
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : '6bba008355ef92b2c5c815996c7a0cda',
+                        'format' : 'iframe',
+                        'height' : 50,
+                        'width' : 320,
+                        'params' : {}
+                    };
+                    document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://maritaltrousersidle.com/6bba008355ef92b2c5c815996c7a0cda/invoke.js"></scr' + 'ipt>');
+                </script>
+            </div>
+        </div>
+
+
       <!-- nav -->
       <div class="w-full bg-fuchsia-500 grid">
         <nav class="grid grid-cols-2">
@@ -41,40 +59,12 @@
       <!-- end nav -->
 
       <!-- disini dipasang iklan Vast -->
-      <div class="w-[90%] aspect-video h-auto mx-auto">
-          <div class="relative w-full flex justify-center items-center py-5 overflow-hidden"> 
-            <video id="video-id"><source src="https://www.videosprofitnetwork.com/watch.xml?key=6da9a53b5a7602e4d7d4b4ce7d7239de4" type="video/mp4" class="absolute z-10 w-auto min-w-full min-h-full max-w-none"/>
-            <script>
-                var myFP = fluidPlayer(
-                    'video-id',	{
-                "layoutControls": {
-                    "controlBar": {
-                        "autoHideTimeout": 3,
-                        "animated": true,
-                        "autoHide": true
-                    },
-                    "htmlOnPauseBlock": {
-                        "html": null,
-                        "height": null,
-                        "width": null
-                    },
-                    "autoPlay": false,
-                    "mute": true,
-                    "allowTheatre": true,
-                    "playPauseAnimation": false,
-                    "playbackRateEnabled": false,
-                    "allowDownload": false,
-                    "playButtonShowing": false,
-                    "fillToContainer": false,
-                    "posterImage": ""
-                },
-                "vastOptions": {
-                    "adList": [],
-                    "adCTAText": false,
-                    "adCTATextPosition": ""
-                }
-            });
-            </script>
+      <div class="block w-[90%] h-auto py-5 aspect-video mx-auto mb-5 md:w-[60%] md:pt-5 md:mb-5">
+          <div class="flex mx-auto block justify-center">
+            <video id="example-player" class="relative w-full flex items-center py-5">
+                <source src="https://www.videosprofitnetwork.com/watch.xml?key=6da9a53b5a7602e4d7d4b4ce7d7239de4" type="video/mp4" />
+                <source src="https://www.videosprofitnetwork.com/watch.xml?key=6da9a53b5a7602e4d7d4b4ce7d7239de4" type="video/webm" />
+            </video>  
         </div>
       </div>
 
@@ -161,5 +151,10 @@
 
     <!-- script ads -->
     <script async="async" data-cfasync="false" src="//maritaltrousersidle.com/8a89c4aa6dfbaed95c72251318051964/invoke.js"></script>
+
+    <script>
+        // fluidPlayer method is global when CDN distribution is used.
+        var player = fluidPlayer('example-player');
+    </script>
     </body>
 </html>
